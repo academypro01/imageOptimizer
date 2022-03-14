@@ -1,2 +1,2 @@
 # Image Optimizer
-Laravel (Intervention/Image Package)
+Laravel (Intervention/Image Package), support `en` and `fa` language.
