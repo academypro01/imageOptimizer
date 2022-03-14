@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::namespace('App\Http\Controllers')->group(function () {
+Route::namespace('App\Http\Controllers')->middleware(['setLocale'])->group(function () {
     Route::get('/', 'HomeController@index');
     Route::resource('image', 'ImageController');
+    Route::get('/changeLanguage', 'HomeController@changeLanguage')->name('change.lang');
 });

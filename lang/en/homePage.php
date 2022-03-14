@@ -10,5 +10,6 @@ return [
     'compress' => 'Compress ',
     'startButton' => 'Start',
     'alert' => 'Image Optimized, now you can download it.',
-    'downloadButton' => 'Download'
+    'downloadButton' => 'Download',
+    'changeLanguage' => 'Change language to FA'
 ];

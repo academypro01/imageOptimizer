@@ -10,5 +10,6 @@ return [
     'compress' => 'فشرده سازی تصویر ',
     'startButton' => 'شروع',
     'alert' => 'تصویر بهینه شد، هم اکنون میتوانید آن را دانلود کنید.',
-    'downloadButton' => 'دانلود تصویر'
+    'downloadButton' => 'دانلود تصویر',
+    'changeLanguage' => 'تغییر زبان به انگلیسی'
 ];

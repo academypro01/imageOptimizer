@@ -10,12 +10,15 @@
 </head>
 <body>
     <div class="container p-4">
+        <div class="nav">
+            <a href="{{ route('change.lang') }}" class="btn btn-secondary">@lang('homePage.changeLanguage')</a>
+        </div>
         <h1 class="text-center">@lang('homePage.title')</h1>
 
         @if(\Illuminate\Support\Facades\Session::has('status'))
 
         <div class="alert alert-success">
-            <b>{{ \Illuminate\Support\Facades\Session::get('status') }}</b>
+            <b>@lang('homePage.alert')</b>
         </div>
             <div class="mt-5">
                 <a href="{{ asset('uploads/'.\Illuminate\Support\Facades\Session::get('filename')) }}" download>
