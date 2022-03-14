@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container p-4">
-        <h1 class="text-center">Image Optimizer!</h1>
+        <h1 class="text-center">@lang('homePage.title')</h1>
 
         @if(\Illuminate\Support\Facades\Session::has('status'))
 
@@ -19,7 +19,7 @@
         </div>
             <div class="mt-5">
                 <a href="{{ asset('uploads/'.\Illuminate\Support\Facades\Session::get('filename')) }}" download>
-                    <button class="btn form-control btn-success" type="button">Download</button>
+                    <button class="btn form-control btn-success" type="button">@lang('homePage.downloadButton')</button>
                 </a>
             </div>
 
@@ -29,26 +29,26 @@
                 <form action="{{ route('image.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="image">Choose an Image:</label>
+                        <label for="image">@lang('homePage.fileInputLabel'):</label>
                         <input accept="image/*" oninput="showDetails()" type="file" name="image" id="image" class="form-control">
                     </div>
                     <div style="display: none" class="mt-4 p-2 border" id="details">
-                        <h3>Config Box:</h3>
+                        <h3>@lang('homePage.configBoxTitle'):</h3>
                         <div class="form-group mt-3">
-                            <label for="width">Width(px):</label>
-                            <input type="number" name="width" id="width" class="form-control" placeholder="Enter Image width px">
+                            <label for="width">@lang('homePage.width')</label>
+                            <input type="number" name="width" id="width" class="form-control" placeholder="@lang('homePage.widthPlaceholder')">
                         </div>
                         <div class="form-group mt-3">
-                            <label for="height">Height(px):</label>
-                            <input type="number" name="height" placeholder="Enter Image Height px" id="height" class="form-control">
+                            <label for="height">@lang('homePage.height')</label>
+                            <input type="number" name="height" placeholder="@lang('homePage.heightPlaceholder')" id="height" class="form-control">
                         </div>
                         <div class="form-group mt-3">
-                            <label for="compress">Compress (<span id="compressPercent">20%</span>):</label>
+                            <label for="compress">@lang('homePage.compress') (<span id="compressPercent">20%</span>):</label>
 
                             <input oninput="changeRange()" type="range" name="compress" id="compress" class="form-control" min="0" max="100" value="20">
                         </div>
                         <div class="form-group mt-3">
-                            <input type="submit" value="Start" class="form-control btn btn-success">
+                            <input type="submit" value="@lang('homePage.startButton')" class="form-control btn btn-success">
                         </div>
                     </div>
                 </form>

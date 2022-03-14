@@ -1,14 +1,14 @@
 <?php
 return [
-    'title' => 'Image Optimizer!',
-    'fileInputLabel' => 'Choose an Image',
-    'configBoxTitle' => 'Config Box',
-    'width' => 'Width(px):',
-    'height' => 'Height(px):',
-    'widthPlaceholder' => 'Enter Image width px',
-    'heightPlaceholder' => 'Enter Image height px',
-    'compress' => 'Compress ',
-    'startButton' => 'Start',
-    'alert' => 'Image Optimized, now you can download it.',
-    'downloadButton' => 'Download'
+    'title' => 'بهینه ساز تصاویر!',
+    'fileInputLabel' => 'یک تصویر را انتخاب کنید',
+    'configBoxTitle' => 'جعبه تنظیمات',
+    'width' => 'عرض تصویر به پیکسل:',
+    'height' => 'طول تصویر به پیکسل:',
+    'widthPlaceholder' => 'عرض تصویر را به پیکسل وارد کنید',
+    'heightPlaceholder' => 'طول تصویر را به پیکسل وارد کنید',
+    'compress' => 'فشرده سازی تصویر ',
+    'startButton' => 'شروع',
+    'alert' => 'تصویر بهینه شد، هم اکنون میتوانید آن را دانلود کنید.',
+    'downloadButton' => 'دانلود تصویر'
 ];
